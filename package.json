@@ -1,25 +1,18 @@
 {
   "name": "ember-cli-typekit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simple addon that injects typekit into index.html",
-  "author": {
-    "name": "Kyle Nathan"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sportly/ember-cli-typekit"
-  },
+  "author": "",
+  "repository": "",
   "bugs": {
     "url": "https://github.com/sportly/ember-cli-typekit/issues"
   },
   "homepage": "https://github.com/sportly/ember-cli-typekit",
   "directories": {},
   "scripts": {},
-  "repository": "",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
   "license": "MIT",
   "devDependencies": {},
   "keywords": [
