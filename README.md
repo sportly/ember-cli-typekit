@@ -1,25 +1,30 @@
-# Ember-cli-typekit
+# ember-cli-typekit
 
-This README outlines the details of collaborating on this Ember addon.
+This ember-cli addon injects typekit into index.html. More info on typekit at http://www.typekit.com
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+```
+npm install --save-dev ember-cli-typekit
+```
 
-## Running
+# Configuration
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+This plugin uses the ember-cli project's configuration as defined in `config/environment.js`.
 
-## Running Tests
+Add your typekit kitId to `config/environment.js` and you're good to go. A couple more params below
 
-* `ember test`
-* `ember test --server`
+```js
+// environment.js
 
-## Building
+    ENV.typekit: {
+        kitId: 'xxxxxx'
+    }
+```
 
-* `ember build`
 
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+### Configuration Parameters
+
+* `kitId` (Default: `null`): The typekit kitId.
+* `sync` (Default: `false`): Inject the sync script instead of the default async script.
+* `timeout` (Default: `3000`): The default typekit timeout used when loading the async version. Param passed straight to typekit.
