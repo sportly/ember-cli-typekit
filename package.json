@@ -3,7 +3,7 @@
   "version": "0.0.2",
   "description": "Simple addon that injects typekit into index.html",
   "author": "",
-  "repository": "",
+  "repository": "git@github.com:sportly/ember-cli-typekit.git",
   "bugs": {
     "url": "https://github.com/sportly/ember-cli-typekit/issues"
   },
