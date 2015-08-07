@@ -17,14 +17,28 @@ Add your typekit kitId to `config/environment.js` and you're good to go. A coupl
 ```js
 // environment.js
 
-    ENV.typekit: {
+    ENV.typekit = {
         kitId: 'xxxxxx'
     }
 ```
-
 
 ### Configuration Parameters
 
 * `kitId` (Default: `null`): The typekit kitId.
 * `sync` (Default: `false`): Inject the sync script instead of the default async script.
 * `timeout` (Default: `3000`): The default typekit timeout used when loading the async version. Param passed straight to typekit.
+
+## Disabling per environment
+
+You can disable injecting typekit into different environments by setting the
+disabled param to true:
+
+```js
+// environment.js
+
+if (environment === 'test') {
+  ENV.typekit = {
+    disabled: true
+  }
+}
+```

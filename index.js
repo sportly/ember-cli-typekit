@@ -5,7 +5,7 @@ module.exports = {
   name: 'ember-cli-typekit',
 
   contentFor: function(type, config) {
-    if (type === 'head-footer') {
+    if (type === 'head-footer' && !config.typekit.disabled) {
 
       if (config.typekit.sync === true) {
           return '<script src="//use.typekit.net/' + config.typekit.kitId + '.js"></script>' +
